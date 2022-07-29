@@ -79,7 +79,7 @@ function App() {
             <p>
               There are not too many fancy designs out there. Join us to get the
               very best picture, web design, crystal clear grahical HD profiles.
-              We got you covered for life
+              We got you covered for life!
             </p>
             <Button>Get Started</Button>
           </TextContainer>

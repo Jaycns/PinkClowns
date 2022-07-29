@@ -8,6 +8,7 @@ export const AppWrapper = styled.div`
     margin: 0;
     border-radius: 0rem;
     width: 100%;
+    max-width: 100%;
   }
 `;
 export const NavBar = styled.div`
@@ -79,12 +80,12 @@ export const Container = styled.div`
   }
   @media screen and (max-width: 900px) {
     img {
-      margin-left: -6rem;
-      width: 470px;
-      height: 390px;
+      margin: 0rem;
+      width: 300px;
+      height: 200px;
       &:first-child {
-        width: 70px;
-        height: 50px;
+        width: 40px;
+        height: 20px;
       }
     }
   }
