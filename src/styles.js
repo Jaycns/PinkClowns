@@ -27,6 +27,12 @@ export const NavBar = styled.div`
       height: 80px;
     }
   }
+  @media screen and (max-width: 900px) {
+    justify-content: space-between;
+    img {
+     margin-left: 1.4rem
+    }
+  }
 `;
 export const Nav = styled.div`
   display: flex;
@@ -36,7 +42,9 @@ export const Nav = styled.div`
   @media screen and (max-width: 900px) {
     font-size: 0.5rem;
     width: 10rem;
+    display: none;
   }
+  
 `;
 export const Icons = styled.div`
   display: flex;
@@ -50,6 +58,7 @@ export const Icons = styled.div`
   @media screen and (max-width: 900px) {
     font-size: 0.8rem;
     width: 5rem;
+    margin-right: 2rem;
   }
 `;
 export const MarginBox = styled.div`
@@ -73,19 +82,20 @@ export const Container = styled.div`
     }
   }
   @media screen and (max-width: 1200px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     img {
       margin-left: -9rem;
     }
   }
   @media screen and (max-width: 900px) {
     img {
-      margin: 0rem;
-      width: 300px;
-      height: 200px;
+      margin: 0;
+      margin-left: -3rem;
+      width: 370px;
+      height: 320px;
       &:first-child {
-        width: 40px;
-        height: 20px;
+        width: 60px;
+        height: 40px;
       }
     }
   }
@@ -105,12 +115,14 @@ export const TextContainer = styled.div`
   }
   @media screen and (max-width: 900px) {
     h1 {
-      font-size: 30px;
-      margin-bottom: 1rem;
+      font-size: 24px;
+      margin-bottom: 0rem;
+      margin-top: -3rem;
       width: 300px;
     }
     p {
       font-size: 12px;
+      
     }
   }
 `;
@@ -128,6 +140,13 @@ export const Button = styled.button`
     padding: 1rem 1rem;
     border-radius: 0.5rem;
   }
+  @media screen and (max-width: 500px) {
+    font-size: 10px;
+    padding: .8rem 1.2rem;
+    border-radius: 0.5rem;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+  }
 `;
 export const ProductBox = styled.div`
   display: grid;
@@ -135,6 +154,9 @@ export const ProductBox = styled.div`
   margin: 2rem 0rem;
   row-gap: 1.5rem;
   column-gap: 0.5rem;
+  @media (max-width: 500px) {
+    margin: 1.2rem 0rem;
+  }
 `;
 export const Card = styled.div`
   width: 300px;
