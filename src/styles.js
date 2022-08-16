@@ -135,6 +135,11 @@ export const Button = styled.button`
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  transition: .5s ease-in-out;
+  :hover {
+    color: black;
+    background-color: transparent;
+  }
   @media screen and (max-width: 900px) {
     font-size: 10px;
     padding: 1rem 1rem;
@@ -142,10 +147,10 @@ export const Button = styled.button`
   }
   @media screen and (max-width: 500px) {
     font-size: 10px;
-    padding: .8rem 1.2rem;
+    padding: 0.8rem 1.2rem;
     border-radius: 0.5rem;
-    margin-top: .8rem;
-    margin-bottom: .8rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
   }
 `;
 export const ProductBox = styled.div`
